@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(30, 0, 77);
+}
+
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .center-div .tasks-table {
+  width: 60%;
+  background-color: rgb(239, 239, 239);
+  margin-top: 130px;
+}
+
+.container .center-div .tasks-table .header {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(102, 59, 171);
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.container .center-div .tasks-table .header h1 {
+  display: inline;
+}
+
+button {
+  background-color: white;
+  /* display: flex; */
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.38);
+}
+
+button.circular {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+}
+
+button.circular:hover {
+  box-shadow: 0px 3px 15px rgba(97, 97, 97, 10);
+}
+
+
+.container .center-div .tasks-table .tasks {
+  padding: 20px;
+}
+
+.container .center-div .tasks-table .tasks .task .task-info {
+  width: 70%;
+}
+
+.container .center-div .tasks-table .tasks .task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 4px;
+  border-bottom: 1px black solid;
+  transition: box-shadow 0.2s;
+  -webkit-transition: box-shadow 0.2s;
+  -moz-transition: box-shadow 0.2s;
+  -ms-transition: box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+}
+
+.container .center-div .tasks-table .tasks .done {
+  background-color: rgb(158, 253, 160);
+}
+
+.container .center-div .tasks-table .tasks .task:hover {
+  box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+.container .center-div .tasks-table .tasks .task .task-actions {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .center-div .tasks-table .tasks .task .task-actions .delete {
+  background-color: red;
+  color: white;
+}
+
+
+.container .center-div .tasks-table .tasks .task .task-actions .finished {
+  background-color: green;
+  color: white;
+}
+
+.container .center-div .tasks-table .tasks .task .task-actions .orCancel {
+  background-color: rgb(118, 0, 101);
+  color: white;
+}
+
+.container .center-div .tasks-table .tasks .task .task-actions .edit {
+  background-color: blue;
+  color: white;
+}

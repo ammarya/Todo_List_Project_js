@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Todo List App</title>
+  <!-- External Library -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- External Library //-->
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Center Div -->
+    <div class="center-div">
+      <!-- Tasks Table -->
+      <div class="tasks-table">
+        <!-- Header -->
+        <div class="header">
+          <h1>My Tasks</h1>
+          <button id="add-new-task" class="circular"><span class="material-symbols-outlined">
+              add
+            </span></button>
+        </div>
+        <!-- Header //-->
+        <!-- Tasks -->
+        <div id="tasks" class="tasks">
+          <!-- Task -->
+          <div class="task">
+            <!-- Task Info -->
+            <div class="task-info">
+              <h2>Read a Book</h2>
+              <div class="date">
+                <span class="material-symbols-outlined">
+                  calendar_month
+                </span>
+                <span>10/11/2023</span>
+              </div>
+            </div>
+            <!-- Task Info //-->
+            <!-- Task Actions -->
+            <div class="task-actions">
+              <button id="delete-task" class="circular delete"><span class="material-symbols-outlined">
+                  delete</span></button>
+              <button class="circular done"><span class="material-symbols-outlined">
+                  done
+                </span></button>
+              <button class="circular edit"><span class="material-symbols-outlined">
+                  edit
+                </span></button>
+            </div>
+            <!-- Task Actions// -->
+          </div>
+          <!-- Task //-->
+        </div>
+        <!-- Tasks //-->
+
+      </div>
+      <!-- Tasks Table //-->
+    </div>
+    <!-- Center Div //-->
+  </div>
+</body>
+<script src="main.js"></script>
+
+</html>
